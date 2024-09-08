@@ -37,7 +37,15 @@ header {
 
 header .logo {
     height: 50px;
+}/header 
+
+.header-logo {
+  width: 250px;
+  height: auto;
+  margin: 0 20px;
+  vertical-align: middle;
 }
+
 
 header nav {
     float: right;
