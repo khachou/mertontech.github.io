@@ -43,6 +43,13 @@ header {
     width: 150px;
 }
 
+.header-logo {
+  width: 250px;
+  height: auto;
+  margin: 0 20px;
+  vertical-align: middle;
+}
+
 nav ul {
     list-style: none;
     display: flex;
