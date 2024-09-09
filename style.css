@@ -385,75 +385,61 @@ header::after {
 }
 
 /* Contact Section */
-.contact {
-    padding: 60px 0;
-    background-color: #fff;
+
+#contact-section {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+  text-align: center;
 }
 
-.contact h2 {
-    text-align: center;
-    color: #0a74da;
-    margin-bottom: 40px;
-    font-size: 2.5rem;
+#contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
 }
 
-.contact form {
-    max-width: 600px;
-    margin: auto;
+.contact-options {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.form-group {
-    margin-bottom: 20px;
-    position: relative;
+.contact-card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 45%;
+  margin-bottom: 20px;
 }
 
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    color: #0a74da;
-    font-weight: 500;
+.contact-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
 }
 
-.form-group i {
-    position: absolute;
-    top: 40px;
-    left: 10px;
-    color: #0a74da;
+.contact-card p {
+  font-size: 1rem;
+  margin-bottom: 20px;
 }
 
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 10px 10px 10px 40px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: border-color 0.3s;
+.contact-info {
+  font-size: 1.2rem;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-    border-color: #0a74da;
-    outline: none;
+.contact-info i {
+  color: #ff6f61;
+  margin-right: 10px;
 }
 
-.contact button {
-    background-color: #0a74da;
-    color: #fff;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 50px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    display: block;
-    margin: auto;
+a {
+  color: #007bff;
+  text-decoration: none;
 }
 
-.contact button:hover {
-    background-color: #094a8a;
+a:hover {
+  text-decoration: underline;
 }
+
 
 /* Footer */
 footer {
