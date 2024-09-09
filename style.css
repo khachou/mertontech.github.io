@@ -229,7 +229,7 @@ header::after {
 }
 
 .about-content h2 .highlight {
-    color: #00796b;
+    color: #0a74da;
     font-weight: 700;
 }
 
@@ -253,7 +253,7 @@ header::after {
 
 .stat-item h3 {
     font-size: 2.5rem;
-    color: #00796b;
+    color: #0a74da;
     margin-bottom: 10px;
 }
 
@@ -265,7 +265,7 @@ header::after {
 .btn-cta {
     display: inline-block;
     padding: 12px 30px;
-    background-color: #00796b;
+    background-color: #0a74da;
     color: #fff;
     font-size: 1rem;
     font-weight: 500;
@@ -302,7 +302,7 @@ header::after {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 121, 107, 0.9);
+    background: rgba(10, 116, 218, 1);
     color: white;
     padding: 20px;
     text-align: center;
