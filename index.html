@@ -8,254 +8,7 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    
-    <style>
-        /* General Styles */
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        
-        header {
-            background-color: #004080;
-            padding: 15px 0;
-            color: white;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
-
-        nav ul li {
-            margin: 0 10px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            padding: 10px;
-            transition: background-color 0.3s ease;
-        }
-
-        nav ul li a:hover {
-            background-color: #003366;
-            border-radius: 5px;
-        }
-
-        .hero {
-            background-image: url('images/hero.jpg'); /* Use an actual image here */
-            background-size: cover;
-            background-position: center;
-            height: 400px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-        }
-
-        .btn {
-            background-color: #ff6600;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            display: inline-block;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn:hover {
-            background-color: #cc5200;
-        }
-
-        /* Services Section */
-        .services {
-            background-color: #fff;
-            padding: 40px 0;
-        }
-
-        .service-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-
-        .service-item {
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            padding: 20px;
-            text-align: center;
-            border-radius: 8px;
-            margin: 15px;
-            width: 300px;
-            transition: transform 0.3s ease;
-        }
-
-        .service-item:hover {
-            transform: translateY(-10px);
-        }
-
-        .service-item i {
-            font-size: 2rem;
-            color: #004080;
-        }
-
-        /* About Section */
-        .about {
-            background-color: #f4f4f4;
-            padding: 40px 0;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-
-        .about-image img {
-            width: 100%;
-            max-width: 400px;
-            border-radius: 8px;
-        }
-
-        /* Testimonials Section */
-        .testimonials {
-            background-color: #fff;
-            padding: 40px 0;
-        }
-
-        .testimonial-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-
-        .testimonial-item {
-            background-color: #f9f9f9;
-            padding: 20px;
-            text-align: center;
-            margin: 15px;
-            border-radius: 8px;
-            width: 300px;
-        }
-
-        .testimonial-item img {
-            border-radius: 50%;
-            width: 100px;
-            height: 100px;
-        }
-
-        /* Contact Section */
-        .contact form {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-gap: 20px;
-        }
-
-        .form-group {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .form-group label {
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-
-        .form-group input, .form-group textarea {
-            padding: 10px;
-            border-radius: 5px;
-            border: 1px solid #ddd;
-        }
-
-        .form-group input:focus, .form-group textarea:focus {
-            border-color: #004080;
-            outline: none;
-        }
-
-        button.btn {
-            grid-column: span 2;
-            padding: 15px;
-            background-color: #004080;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-
-        button.btn:hover {
-            background-color: #003366;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #00264d;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        footer .social-icons a {
-            color: white;
-            margin: 0 10px;
-            text-decoration: none;
-            font-size: 1.5rem;
-        }
-
-        /* Mobile Responsiveness */
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-            }
-
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .service-list, .testimonial-list {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .contact form {
-                grid-template-columns: 1fr;
-            }
-
-            .about {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .about-image img {
-                max-width: 100%;
-                margin-top: 20px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero h1 {
-                font-size: 1.5rem;
-            }
-
-            .btn {
-                padding: 8px 16px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTTXCU9QKE48cXnD/n0JVc5g0s8lDjy9UpqNH0BSf36q1DkYqE5e3G9PTh0kF2eD1VvhLytPg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!-- Header -->
@@ -316,7 +69,7 @@
     <section id="about" class="about">
         <div class="container">
             <h2>About MertonTech</h2>
-            <p>At MertonTech, we believe technology should simplify your life, not complicate it. Our mission is to provide reliable, efficient, and affordable IT support to individuals and small businesses.</p>
+            <p>At MertonTech, we believe technology should simplify your life, not complicate it. Our mission is to provide reliable, efficient, and affordable IT support to individuals and small businesses. With years of experience and a passion for technology, we ensure your devices and networks run smoothly, allowing you to focus on what truly matters.</p>
             <div class="about-image">
                 <img src="images/about.jpg" alt="About MertonTech">
             </div>
@@ -338,6 +91,7 @@
                     <p>"Excellent support! They fixed my laptop quickly and even taught me some useful tips."</p>
                     <h4>John Smith</h4>
                 </div>
+                <!-- Add more testimonials as needed -->
             </div>
         </div>
     </section>
@@ -383,6 +137,5 @@
             </div>
         </div>
     </footer>
-    <script src="scripts/script.js"></script>
 </body>
 </html>
