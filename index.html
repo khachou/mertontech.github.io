@@ -3,188 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MertonTech - Professional IT Support</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTTXCU9QKE48cXnD/n0JVc5g0s8lDjy9UpqNH0BSf36q1DkYqE5e3G9PTh0kF2eD1VvhLytPg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>MertonTech - Your Personal IT Solution</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-           <a href="#home" class="logo"> 
-            <img src="images/logo.png" alt="MertonTech Logo" class="logo-img">
-           </a> 
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <button class="menu-toggle" aria-label="Toggle navigation">
-              <span class="burger"></span>
-            </button>
-        </div>
-    </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Welcome to MertonTech</h1>
-            <p>Your Trusted Local IT Support for Home & Small Businesses</p>
-            <a href="#contact" class="btn">Get Started</a>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="service-list">
-                <div class="service-item">
-                    <i class="fas fa-laptop-code"></i>
-                    <h3>Device Setup</h3>
-                    <p>Professional setup and configuration for laptops, printers, routers, and more.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-tools"></i>
-                    <h3>Troubleshooting & Repairs</h3>
-                    <p>Quick diagnosis and repair of software, hardware, and network issues.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-business-time"></i>
-                    <h3>Small Business Support</h3>
-                    <p>Comprehensive IT solutions to keep your business running smoothly.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-shield-alt"></i>
-                    <h3>Security & Backup</h3>
-                    <p>Protect your data with our backup and cybersecurity services.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-<section id="about" class="about">
+<header class="header">
     <div class="container">
-        <div class="about-grid">
-            <!-- Left Column - Text Content -->
-            <div class="about-content">
-                <h2>Welcome to <span class="highlight">MertonTech</span></h2>
-                <p>We are your trusted technology partners, providing IT support to individuals and small businesses. From troubleshooting devices to setting up networks, we’ve got you covered with fast, reliable, and expert solutions.</p>
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="MertonTech Logo">
+        </a>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <span class="burger"></span>
+        </button>
+    </div>
+</header>
 
-                <div class="about-stats">
-                    <div class="stat-item">
-                        <h3>10+</h3>
-                        <p>Years of Experience</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>500+</h3>
-                        <p>Happy Clients</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>24/7</h3>
-                        <p>Support Availability</p>
-                    </div>
-                </div>
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Welcome to MertonTech</h1>
+        <p>Your One-Stop Solution for IT Support</p>
+        <a href="#services" class="btn-primary">Our Services</a>
+    </div>
+</section>
 
-                <a href="#contact" class="btn-cta">Work with Us</a>
+<!-- Services Section -->
+<section id="services" class="services-section">
+    <div class="container">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-item">
+                <h3>Device Setup</h3>
+                <p>We help set up laptops, printers, and routers with ease and professionalism.</p>
             </div>
-
-            <!-- Right Column - Image Content -->
-            <div class="about-image">
-                <img src="images/teamwork.png" alt="MertonTech Team - About Us">
-                <div class="overlay-text">
-                    <h3>Professional IT Support</h3>
-                    <p>Tailored solutions for your tech needs.</p>
-                </div>
+            <div class="service-item">
+                <h3>Software Installation</h3>
+                <p>Install and configure any necessary software for your business or personal needs.</p>
+            </div>
+            <div class="service-item">
+                <h3>Network Troubleshooting</h3>
+                <p>Resolve network issues and ensure a stable connection in your home or office.</p>
+            </div>
+            <div class="service-item">
+                <h3>Device Maintenance</h3>
+                <p>Maintain and optimize your devices for peak performance and longevity.</p>
             </div>
         </div>
     </div>
 </section>
 
-   
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <h2>What Our Clients Say</h2>
-            <div class="testimonial-list">
-                <div class="testimonial-item">
-                    <img src="images/testimonial.png" alt="Client Photo">
-                    <p>"MertonTech has been a lifesaver for our small business. Their prompt and professional service is unmatched!"</p>
-                    <h4>Jane Doert</h4>
-                </div>
-                <div class="testimonial-item">
-                    <img src="images/testimonial.jpg" alt="Client Photo">
-                    <p>"Excellent support! They fixed my laptop quickly and even taught me some useful tips."</p>
-                    <h4>John Oliver</h4>
-                </div>
-                <!-- Add more testimonials as needed -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact-section">
-  <div class="container">
-    <h2>Contact Us</h2>
-    <div class="contact-options">
-      <!-- Talk to Us Section -->
-      <div class="contact-card talk-to-us">
-        <h3>Talk to Us</h3>
-        <p>Need immediate assistance? Give us a call:</p>
-        <div class="contact-info">
-          <p><i class="fas fa-phone-alt"></i> +1-800-123-4567</p>
-          <p><i class="fas fa-phone-alt"></i> +1-800-765-4321</p>
-        </div>
-      </div>
-
-      <!-- Write to Us Section -->
-      <div class="contact-card write-to-us">
-        <h3>Write to Us</h3>
-        <p>Prefer to email us? You can reach us at:</p>
-        <div class="contact-info">
-          <p><i class="fas fa-envelope"></i> <a href="mailto:contact@mertontech.com">contact@mertontech.com</a></p>
-        </div>
-      </div>
+<!-- About Us Section -->
+<section id="about" class="about-section">
+    <div class="container">
+        <h2>About MertonTech</h2>
+        <p>At MertonTech, we specialize in providing IT support to non-IT individuals and small businesses. We aim to take the hassle out of managing your devices and ensure that you can focus on what matters most.</p>
     </div>
-  </div>
 </section>
 
+<!-- Contact Section with Messaging Form -->
+<section id="contact" class="contact-section">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>Have any questions or need assistance? Send us a message, and we'll get back to you soon!</p>
+        <form id="contactForm" method="POST" action="/send-message">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>© 2024 MertonTech. All Rights Reserved.</p>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-        </div>
-    </footer>
-     <script>
-// Sticky header
-window.addEventListener('scroll', () => {
-    const header = document.querySelector('header');
-    header.classList.toggle('sticky', window.scrollY > 0);
-});
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 MertonTech. All Rights Reserved.</p>
+    </div>
+</footer>
 
-// Toggle navigation on mobile
-const menuToggle = document.querySelector('.menu-toggle');
-const nav = document.querySelector('nav');
-
-menuToggle.addEventListener('click', () => {
-    menuToggle.classList.toggle('open');
-    nav.classList.toggle('show');
-});
-  </script>
+<script src="scripts/script.js"></script>
 </body>
 </html>
