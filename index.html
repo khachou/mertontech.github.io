@@ -3,110 +3,386 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MertonTech | IT Solutions for Small Businesses</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>MertonTech - Professional IT Support</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background-color: #004080;
+            padding: 15px 0;
+            color: white;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #003366;
+            border-radius: 5px;
+        }
+
+        .hero {
+            background-image: url('images/hero.jpg'); /* Use an actual image here */
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+        }
+
+        .btn {
+            background-color: #ff6600;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #cc5200;
+        }
+
+        /* Services Section */
+        .services {
+            background-color: #fff;
+            padding: 40px 0;
+        }
+
+        .service-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .service-item {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            margin: 15px;
+            width: 300px;
+            transition: transform 0.3s ease;
+        }
+
+        .service-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-item i {
+            font-size: 2rem;
+            color: #004080;
+        }
+
+        /* About Section */
+        .about {
+            background-color: #f4f4f4;
+            padding: 40px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .about-image img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 8px;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            background-color: #fff;
+            padding: 40px 0;
+        }
+
+        .testimonial-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .testimonial-item {
+            background-color: #f9f9f9;
+            padding: 20px;
+            text-align: center;
+            margin: 15px;
+            border-radius: 8px;
+            width: 300px;
+        }
+
+        .testimonial-item img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+
+        /* Contact Section */
+        .contact form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input, .form-group textarea {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            border-color: #004080;
+            outline: none;
+        }
+
+        button.btn {
+            grid-column: span 2;
+            padding: 15px;
+            background-color: #004080;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button.btn:hover {
+            background-color: #003366;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #00264d;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer .social-icons a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .service-list, .testimonial-list {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact form {
+                grid-template-columns: 1fr;
+            }
+
+            .about {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about-image img {
+                max-width: 100%;
+                margin-top: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+
+            .btn {
+                padding: 8px 16px;
+            }
+        }
+    </style>
 </head>
 <body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <img src="images/logo.png" alt="MertonTech Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<header class="header">
-    <div class="container">
-        <a href="#home" class="logo">MertonTech</a>
-        <nav class="nav">
-            <ul class="nav-list">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Our Services</a></li>
-                <li><a href="#why-us">Why Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <button class="menu-toggle" aria-label="Toggle navigation">
-            <span class="burger"></span>
-        </button>
-    </div>
-</header>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to MertonTech</h1>
+            <p>Your Trusted Local IT Support for Home & Small Businesses</p>
+            <a href="#contact" class="btn">Get Started</a>
+        </div>
+    </section>
 
-<!-- Hero Section -->
-<section id="home" class="hero">
-    <div class="hero-content">
-        <h1>Empowering Small Businesses with Professional IT Support</h1>
-        <p>Get the tech help you need to keep your business running smoothly. Affordable, reliable, and tailored for non-tech-savvy users.</p>
-        <a href="#contact" class="btn-primary">Let's Get Started</a>
-    </div>
-</section>
-
-<!-- Services Section -->
-<section id="services" class="services-section">
-    <div class="container">
-        <h2>What We Do</h2>
-        <div class="services-grid">
-            <div class="service-item">
-                <h3>Technical Support</h3>
-                <p>We provide quick solutions for everyday IT problems that slow you down – from printer issues to network glitches.</p>
-            </div>
-            <div class="service-item">
-                <h3>Device Setup</h3>
-                <p>Setting up new laptops, desktops, or routers? We’ll ensure your devices are ready for use without any hassle.</p>
-            </div>
-            <div class="service-item">
-                <h3>Software Installation</h3>
-                <p>Need to install software or perform system upgrades? We handle installations to keep your operations running.</p>
-            </div>
-            <div class="service-item">
-                <h3>Cloud Services</h3>
-                <p>Optimize your business using cloud storage and remote access solutions that are easy to manage and cost-effective.</p>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-list">
+                <div class="service-item">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Device Setup</h3>
+                    <p>Professional setup and configuration for laptops, printers, routers, and more.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-tools"></i>
+                    <h3>Troubleshooting & Repairs</h3>
+                    <p>Quick diagnosis and repair of software, hardware, and network issues.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-business-time"></i>
+                    <h3>Small Business Support</h3>
+                    <p>Comprehensive IT solutions to keep your business running smoothly.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Security & Backup</h3>
+                    <p>Protect your data with our backup and cybersecurity services.</p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Why Us Section -->
-<section id="why-us" class="why-us-section">
-    <div class="container">
-        <h2>Why Choose MertonTech?</h2>
-        <div class="why-us-content">
-            <div class="why-us-item">
-                <h3>Personalized for Small Businesses</h3>
-                <p>We understand the unique challenges small businesses face and provide customized solutions for your specific needs.</p>
-            </div>
-            <div class="why-us-item">
-                <h3>No IT Experience Required</h3>
-                <p>We make tech simple. No jargon, no complicated processes. Just plain, simple help for everyday users.</p>
-            </div>
-            <div class="why-us-item">
-                <h3>Affordable Pricing</h3>
-                <p>We believe in transparent and fair pricing. Our services are affordable for small businesses and entrepreneurs.</p>
-            </div>
-            <div class="why-us-item">
-                <h3>Reliable & Trustworthy</h3>
-                <p>With years of experience, we are known for delivering reliable, consistent results that our clients trust.</p>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About MertonTech</h2>
+            <p>At MertonTech, we believe technology should simplify your life, not complicate it. Our mission is to provide reliable, efficient, and affordable IT support to individuals and small businesses.</p>
+            <div class="about-image">
+                <img src="images/about.jpg" alt="About MertonTech">
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Contact Section -->
-<section id="contact" class="contact-section">
-    <div class="container">
-        <h2>Contact Us</h2>
-        <p>Have questions or need support? Get in touch with us today!</p>
-        <form id="contactForm" method="POST" action="/send-message">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="5" placeholder="How can we help?" required></textarea>
-            <button type="submit" class="btn-primary">Send Message</button>
-        </form>
-    </div>
-</section>
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-list">
+                <div class="testimonial-item">
+                    <img src="images/testimonial.jpg" alt="Client Photo">
+                    <p>"MertonTech has been a lifesaver for our small business. Their prompt and professional service is unmatched!"</p>
+                    <h4>Jane Doe</h4>
+                </div>
+                <div class="testimonial-item">
+                    <img src="images/testimonial.jpg" alt="Client Photo">
+                    <p>"Excellent support! They fixed my laptop quickly and even taught me some useful tips."</p>
+                    <h4>John Smith</h4>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- Footer Section -->
-<footer class="footer">
-    <div class="container">
-        <p>&copy; 2024 MertonTech. Empowering Small Businesses with IT Solutions.</p>
-    </div>
-</footer>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name"><i class="fas fa-user"></i> Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
 
-<script src="scripts/script.js"></script>
+                <div class="form-group">
+                    <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone"><i class="fas fa-phone"></i> Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message"><i class="fas fa-comment-alt"></i> Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+                </div>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2024 MertonTech. All Rights Reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
-

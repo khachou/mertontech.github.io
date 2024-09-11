@@ -1,9 +1,17 @@
-window.addEventListener('scroll', () => {
-    const header = document.querySelector('.header');
-    header.classList.toggle('sticky', window.scrollY > 0);
+// Mobile Navigation Toggle
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('nav ul');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
 });
 
-document.querySelector('.menu-toggle').addEventListener('click', () => {
-    const nav = document.querySelector('.nav');
-    nav.classList.toggle('show');
+// Smooth Scroll for Links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 });
