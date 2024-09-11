@@ -12,17 +12,20 @@ body {
     margin: 0 auto;
 }
 
+/* General Header Styles */
 header {
-    background-color: #004080;
+    background-color: #0056b3; /* Deep vibrant blue */
     padding: 15px 0;
     color: white;
     position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
 }
 
 .logo {
     max-width: 150px;
 }
 
+/* Desktop Navigation */
 nav {
     display: flex;
     justify-content: space-between;
@@ -45,22 +48,64 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #003366;
+    background-color: #003d80;
     border-radius: 5px;
 }
 
+/* Hamburger Menu for Mobile */
 .hamburger {
     display: none;
     flex-direction: column;
     cursor: pointer;
-    gap: 4px;
+    gap: 5px;
 }
 
 .hamburger div {
-    width: 25px;
+    width: 30px;
     height: 3px;
     background-color: white;
 }
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    /* Adjust layout for mobile */
+    nav {
+        position: relative;
+    }
+
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust based on header height */
+        right: 0;
+        background-color: #0056b3;
+        width: 100%;
+        display: none;
+        padding: 10px 0;
+        border-radius: 0 0 5px 5px;
+    }
+
+    nav ul.open {
+        display: flex; /* Show when hamburger is clicked */
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* Ensure content does not overlap with the header */
+header {
+    z-index: 1000;
+    position: relative;
+}
+
 
 /* Hero Section */
 .hero {
